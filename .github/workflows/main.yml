@@ -52,7 +52,7 @@ jobs:
           runtime: python38
           env_vars_file: .github/env/env.yaml
           event_trigger_type: providers/cloud.pubsub/eventTypes/topic.publish
-          event_trigger_resource: projects/${{ secrets.GCP_PROJ_NAME }}/topics/projects/primal-arcadia-395812/topics/demo-pipeline
+          event_trigger_resource: projects/${{ secrets.GCP_PROJ_NAME }}/topics/trigger-github-actions-deploy-gf
           
       # Runs a single command using the runners shell
       - name: Deployment has completed
